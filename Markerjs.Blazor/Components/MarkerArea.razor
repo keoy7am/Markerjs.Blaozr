@@ -1,0 +1,4 @@
+﻿<div style="position: relative; display: flex; flex-direction: column; align-items: center;">
+    <img @ref="_sourceImageReference" id="@_sourceImageReference.Id" src="@Src" style="@Style" class="@Class" @onload="SetSourceImage" />
+    <img @ref="_elementReference" id="@_elementReference.Id" src="@Src" style="@($"position: absolute;{Style}")" class="@Class" @onclick="ShowArea" />
+</div>

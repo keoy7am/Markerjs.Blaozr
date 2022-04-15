@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Markerjs.Blazor", "Markerjs.Blazor\Markerjs.Blazor.csproj", "{12CF8495-997C-4572-BDA6-80497680C1EC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Markerjs.Blazor.Sample", "Markerjs.Blazor.Sample\Markerjs.Blazor.Sample.csproj", "{012AC905-F9D4-4318-8D49-2A81CDAD5AAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12CF8495-997C-4572-BDA6-80497680C1EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12CF8495-997C-4572-BDA6-80497680C1EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12CF8495-997C-4572-BDA6-80497680C1EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12CF8495-997C-4572-BDA6-80497680C1EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{012AC905-F9D4-4318-8D49-2A81CDAD5AAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{012AC905-F9D4-4318-8D49-2A81CDAD5AAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{012AC905-F9D4-4318-8D49-2A81CDAD5AAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{012AC905-F9D4-4318-8D49-2A81CDAD5AAA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E0E05440-DB8A-4F2E-9E01-622DFDC8F5DB}
+	EndGlobalSection
+EndGlobal

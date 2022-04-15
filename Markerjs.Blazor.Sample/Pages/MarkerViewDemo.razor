@@ -1,0 +1,22 @@
+﻿@page "/MarkerView"
+
+<MarkerView @ref="_markerView" Src="_content/Markerjs.Blazor/test.jpg" Class="img-fluid" Style="max-width:50%;" JsonText="@JsonText"/>
+
+<hr />
+
+<div class="row pb-3" style="padding: 0 10px;">
+    <textarea rows="3" @bind="@JsonText" />
+    <button @onclick="SetConfig">
+        Set Config
+    </button>
+</div>
+
+@code{
+    private string? JsonText{ get; set; }
+    private MarkerView? _markerView{ get; set; }
+    public async void SetConfig()
+    {
+        await _markerView?.SetConfig(JsonText);
+        await InvokeAsync(StateHasChanged);
+    }
+}

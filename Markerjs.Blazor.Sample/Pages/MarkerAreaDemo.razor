@@ -1,0 +1,22 @@
+﻿@page "/MarkerArea"
+
+<MarkerArea @ref="_markerArea" Src="_content/Markerjs.Blazor/test.jpg" Class="img-fluid" Style="max-width:50%;" JsonText="@JsonText"/>
+
+<hr />
+
+<div class="row pb-3" style="padding: 0 10px;">
+    <button @onclick="GetConfig">
+        Get Config
+    </button>
+    <textarea rows="3" value="@JsonText" />
+</div>
+
+@code{
+    private string? JsonText{ get; set; }
+    private MarkerArea? _markerArea{ get; set; }
+    public async void GetConfig()
+    {
+        JsonText = await _markerArea?.GetConfig();
+        StateHasChanged();
+    }
+}
