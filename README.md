@@ -53,7 +53,7 @@ builder.Services.AddMarkerJs(); // Add this line
 @using Markerjs.Blazor.Components
 ```
 
-### Using the MarkerArea Component
+### MarkerArea Component
 
 ```C#
 @using Markerjs.Blazor.Components
@@ -65,15 +65,45 @@ builder.Services.AddMarkerJs(); // Add this line
 }
 ```
 
-#### Methods of the MarkerArea Component
+**Methods**
 
 |Method|Description|
 |---|---|
 |ShowMarkerArea|Open the image marker|
 |GetConfig|Get config (Json)|
 
-### Using the MarkerView Component
+**Parameters**
 
-```bash
-No content yet
+|Name|Description|
+|---|---|
+|Src| Image source url|
+|Class|CSS Class|
+|Style|CSS Style|
+|JsonText|For binding json content|
+
+### MarkerView Component
+
+```C#
+@using Markerjs.Blazor.Components
+
+<MarkerView @ref="_markerView" Src="_content/Markerjs.Blazor/test.jpg" Class="img-fluid" Style="max-width:50%;" JsonText="@JsonText" />
+
+@code{
+    private MarkerView? _markerView { get; set; }
+}
 ```
+
+**Methods**
+
+|Method|Description|
+|---|---|
+|ToggleMarkers|Toggle markers from json config |
+
+**Parameters**
+
+|Name|Description|
+|---|---|
+|Src| Image source url|
+|Class|CSS Class|
+|Style|CSS Style|
+|JsonText|For binding json content|
