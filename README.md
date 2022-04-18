@@ -32,7 +32,7 @@ In index.html (for Blazor WebAssembly) or _Host.cshtml (for Blazor server)
 
 ```html
 <script src="_content/Markerjs.Blazor/js/markerjs2.js"></script>
-<script src="_content/Markerjs.Blazor/js/markerjs2-live.js"></script>
+<script src="_content/Markerjs.Blazor/js/markerjs-live.js"></script>
 ```
 
 2. Register services to Application
