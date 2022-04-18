@@ -6,7 +6,7 @@ export function toggleMarkers(id, target, config) {
     if (query !== undefined) markerView = query.MarkerView;
 
     if (markerView === undefined || !markerView.isOpen) {
-        markerView = new markerjs2live.MarkerView(target);
+        markerView = new mjslive.MarkerView(target);
         markerView.show(config);
         if (query === undefined)
             MarkerViews.push({ Id: id, MarkerView: markerView });
