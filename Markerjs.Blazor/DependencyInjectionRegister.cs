@@ -10,6 +10,10 @@ namespace Markerjs.Blazor
 {
     public static class DependencyInjectionRegister
     {
-        public static void AddMarkerJs(this IServiceCollection services) => services.AddScoped<MarkerJSService>();
+        public static void AddMarkerJs(this IServiceCollection services)
+        {
+            services.AddScoped<MarkerJSService>();
+            services.AddScoped<MarkerJSLiveService>();
+        }
     }
 }

@@ -21,10 +21,17 @@ namespace Markerjs.Blazor.Services
                "import", "./_content/Markerjs.Blazor/MarkerJsLive.export.js").AsTask());
         }
         public async Task ToggleMarkers(string id, ElementReference target, string jsonText)
-{
-            var config = JsonObject.Parse(jsonText);
-            var module = await moduleTask.Value;
-            await module.InvokeVoidAsync("showMarkerView", target, config);
+        {
+            try
+            {
+                var config = JsonObject.Parse(jsonText);
+                var module = await moduleTask.Value;
+                await module.InvokeVoidAsync("toggleMarkers", target.Id, target, config);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine($"ToggleMarkers Error: {ex.Message}");
+            }
         }
         public async ValueTask DisposeAsync()
         {
