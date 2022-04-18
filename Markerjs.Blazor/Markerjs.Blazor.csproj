@@ -4,6 +4,12 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <Authors>keoy7am</Authors>
+    <Description>This package is a wrapper around markerjs to facilitate its use in Blazor applications.</Description>
+    <PackageProjectUrl>https://github.com/keoy7am/Markerjs.Blaozr</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>csharp blazor markerjs marker image annotation</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,6 +21,13 @@
     <EmbeddedResource Remove="wwwroot\libs\**" />
     <None Remove="npmLibs\**" />
     <None Remove="wwwroot\libs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 
