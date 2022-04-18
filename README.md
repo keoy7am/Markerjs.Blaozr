@@ -5,25 +5,22 @@
 This package is a wrapper around [markerjs](https://github.com/ailon/markerjs2) to facilitate its use in Blazor applications.
 (Currently only wraps basic functions)
 
+## Installation
+
+### [NuGet](https://www.nuget.org/packages/Markerjs.Blazor/)
+
+- Package Manager
+  - Install-Package Markerjs.Blazor -Version 1.0.0
+- .NET CLI
+  - dotnet add package Markerjs.Blazor --version 1.0.0
+
 ### Support with commercial licenses
 
 Under the [linkware license](https://github.com/ailon/markerjs2/blob/master/LICENSE),
 
 All commercial licenses come with email support and major version upgrades subscription. The first year of the subscription is included in the initial purchase. Later on, the subscription renews for approximately half of the initial license price per year (you can see the exact price in the shopping cart). This subscription is optional and you can cancel it at any time. Your license is perpetual and never expires. [(Markerjs official website)](https://markerjs.com/buy)
 
-### Project startup sponsor
-
-Special thanks to [dindins](https://github.com/dindins) for supporting this project.
-
-In order to be able to separate this module, the project was delayed for a few days
- (It was a blazor module required for closed source projects)
- 
-
-## Installation
-
-```bash
-No content yet
-```
+---
 
 ## Quick Start guide
 
@@ -107,3 +104,12 @@ builder.Services.AddMarkerJs(); // Add this line
 |Class|CSS Class|
 |Style|CSS Style|
 |JsonText|For binding json content|
+
+---
+
+### Project startup sponsor
+
+Special thanks to [dindins](https://github.com/dindins) for supporting this project.
+
+In order to be able to separate this module, our project was delayed for a few days
+ (It was a blazor module required for closed source projects)
